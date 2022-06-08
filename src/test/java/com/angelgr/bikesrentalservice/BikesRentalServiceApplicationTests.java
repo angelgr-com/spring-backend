@@ -1,10 +1,10 @@
-package com.angelgr.todo;
+package com.angelgr.bikesrentalservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TodoApplicationTests {
+class BikesRentalServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
