@@ -1,10 +1,10 @@
-package com.angelgr.bikesrentalservice;
+package com.angelgr.bookingrestaurant;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BikesRentalServiceApplicationTests {
+class BookingRestaurantApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package com.angelgr.bikesrentalservice;
+package com.angelgr.bookingrestaurant;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BikesRentalServiceApplication {
+public class BookingRestaurantApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BikesRentalServiceApplication.class, args);
+		SpringApplication.run(BookingRestaurantApplication.class, args);
 	}
 
 }

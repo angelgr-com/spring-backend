@@ -9,12 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.angelgr</groupId>
-	<artifactId>bikes-rental-service</artifactId>
+	<artifactId>booking-restaurant</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bikes-rental-service</name>
+	<name>booking-restaurant</name>
 	<description>RESTful API</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
