@@ -1,10 +1,15 @@
 package com.angelgr.bookingrestaurant.entities;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -12,7 +17,7 @@ import javax.persistence.Table;
 public class Restaurant {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID", unique = true, nullable = true)
+	@Column(name = "ID", unique = true, nullable = false)
 	private Long id;
 	
 	@Column(name = "NAME")
@@ -26,4 +31,7 @@ public class Restaurant {
 	
 	@Column(name = "IMAGE")
 	private String image;
+	
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "restaurant")
+	private List<Reservation> reservations;
 }
