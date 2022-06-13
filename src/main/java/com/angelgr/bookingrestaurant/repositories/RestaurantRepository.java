@@ -15,7 +15,8 @@ public interface RestaurantRepository extends JpaRepository<Restaurant, Long> {
 	
 	Optional<Restaurant> findByName(String nameRestaurant);
 	
-	//	JPA query equivalent to @Query(value="SELECT * FROM restaurant",nativeQuery = true)
-	@Query("SELECT REST FROM Restaurant REST") 
+	// JPA query equivalent to @Query(value="SELECT * FROM restaurant",nativeQuery =
+	// true)
+	@Query("SELECT REST FROM Restaurant REST")
 	public List<Restaurant> findRestaurants();
 }
